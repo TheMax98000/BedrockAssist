@@ -5,13 +5,13 @@
 Native **Bedrock menus** (Floodgate forms) for what Geyser cannot translate to Bedrock players on a Java server.
 Free. **Java players are never affected**, and it works out of the box.
 
-> **Status:** version 1.0.0 released, available on [SpigotMC](https://www.spigotmc.org/resources/bedrockassist.139746/), [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/bedrockassist) and in [Releases](../../releases/latest).
+> **Status:** version 1.0.1 released in [Releases](../../releases/latest). [SpigotMC](https://www.spigotmc.org/resources/bedrockassist.139746/) and [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/bedrockassist) still have 1.0.0 until they are updated.
 
 ## Modules
 
 | Module | Geyser limitation | What BedrockAssist does |
 |---|---|---|
-| Links (`/ba links`) | Bedrock can't open links | Links received in chat (and in plugin messages with PacketEvents) are remembered for 10 minutes and shown in a text field, ready to copy |
+| Links (`/ba links`) | Bedrock can't open links | Links received in chat (and in plugin messages with PacketEvents) are remembered for 10 minutes. On PC they are shown in a text field ready to copy; on phones and consoles, where Bedrock text fields cannot be copied, the address is shown in plain text with a "QR code" button that gives a map to scan |
 | Commands (`/ba commands`) | No command autocompletion | Your list of commands with typed arguments (online players, text, number, choice), then every command the player may use |
 | Enchantments (`/ba enchant`) | Levels above vanilla shown wrong (Silk Touch II appears as Silk Touch) | Real enchantments and levels of the item in hand, including datapack and plugin enchantments |
 | Anvil and smithing table | Custom recipes don't show | *Combine* menu: pick the items, see the result computed by the server, confirm. Plugins that change anvil results are supported |
@@ -19,8 +19,10 @@ Free. **Java players are never affected**, and it works out of the box.
 
 Every module is reachable from the `/ba` menu.
 
-**Copying a link:** the address is selected in the text field even though Bedrock doesn't show it. On PC press
-Ctrl+A then Ctrl+C; on a phone, long-press the field.
+**Copying a link:** on PC the address is selected in the text field even though Bedrock doesn't show it: press
+Ctrl+A then Ctrl+C. Phones and consoles cannot copy from a Bedrock text field (tested on Android): they get the
+address in plain text and a QR code map (scan it with a camera, or take a screenshot and use Google Lens). The map
+is not kept after a server restart; run `/ba links` again.
 
 ## Safety
 
