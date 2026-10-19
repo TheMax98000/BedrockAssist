@@ -5,7 +5,7 @@
 Native **Bedrock menus** (Floodgate forms) for what Geyser cannot translate to Bedrock players on a Java server.
 Free. **Java players are never affected**, and it works out of the box.
 
-> **Status:** version 1.0.1 released in [Releases](../../releases/latest). [SpigotMC](https://www.spigotmc.org/resources/bedrockassist.139746/) and [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/bedrockassist) still have 1.0.0 until they are updated.
+> **Status:** version 1.0.1 released ([Releases](../../releases/latest), [SpigotMC](https://www.spigotmc.org/resources/bedrockassist.139746/), [CurseForge](https://www.curseforge.com/minecraft/bukkit-plugins/bedrockassist)).
 
 ## Modules
 
